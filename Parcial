@@ -1,0 +1,106 @@
+package libreria;
+
+/**
+ *
+ * @author Estudiante
+ */
+public class Libreria {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+    }
+
+    static void add(Libreria libro) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+    
+public class libreria {
+    private final String Nombre;
+    private final double categoria;
+        private final String Libro;
+
+    public libreria ( String Nombre, String Libro, double categoria) {
+        this.Libro = Libro ;
+        this.Nombre = Nombre;
+        this.categoria = categoria;
+    }
+
+    public String getNombre() { return Nombre; }
+    public String getLibro() { return Libro; }
+    public double getcategoria() { return categoria; }
+
+    
+    public void libreria() {
+    System.out.println( "Resultados"+ this.Nombre + this.categoria);
+            }}}
+
+/* aca hacemos el registro de nuevos libreo*/
+package libreria;
+import java.util.ArrayList;
+import java.util.List;
+/**
+ *
+ * @author Estudiante
+ */
+public class registro_libros {
+        private String nombre_libro ;
+    private List<Libreria> Biblioteca ;
+
+    public registro_libros (String Nombre) {
+        this.nombre_libro = Nombre;
+        this.Biblioteca = new ArrayList<>();
+    }
+
+    public void agregar_libro(Libreria libro) {
+        Libreria.add(libro);
+    }
+
+    public String getNombre() { return nombre_libro; }
+
+    public List<Libreria> getBiblioteca() { return Biblioteca; }
+
+    public void mostrarBiblioteca() {
+        System.out.println("Libro: " + nombre_libro);
+        Biblioteca.stream().forEach((_item) -> {
+            System.out.println(Biblioteca);
+        });
+    }
+}
+ /* registro d nuevos libros
+package libreria;
+import java.util.ArrayList;
+import java.util.List;
+/**
+ *
+ * @author Estudiante
+ */
+public class Usuario {
+        private String nombre_estudiante ;
+        private String nombre_docente ;
+    private List<Libreria> LISTA ;
+
+    public Usuario (String nombre_estudiante) {
+        this.nombre_estudiante= Nombre;
+        this.nombre_docente = docente
+        this.LISTA= new ArrayList<>();
+    }
+
+    public void agregar_usuario(Libreria user) {
+        Libreria.add(user);
+    }
+
+    public String getNombre() { return nombre_libro; }
+
+    public List<Libreria> getBiblioteca() { return Biblioteca; }
+
+    public void mostrarBiblioteca() {
+        System.out.println("Libro: " + nombre_libro);
+        Biblioteca.stream().forEach((_item) -> {
+            System.out.println(Biblioteca);
+        });
+    }
+}
+
